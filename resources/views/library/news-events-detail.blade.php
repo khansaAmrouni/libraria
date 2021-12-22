@@ -2,39 +2,8 @@
 <html lang="zxx">
     
 
-<head>        
+    @include('library.header_inc')
 
-        <!-- Meta -->
-        <meta charset="utf-8" />
-        <meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1">
-
-        <!-- Title -->
-        <title>..:: LIBRARIA ::..</title>
-
-        <!-- Favicon -->
-        <link href="images/favicon.ico" rel="icon" type="image/x-icon" />
-
-        <!-- Fonts -->
-        <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i,800,800i%7CLato:100,100i,300,300i,400,400i,700,700i,900,900i" rel="stylesheet" />
-        <link href="css/font-awesome.min.css" rel="stylesheet" type="text/css" />
-
-        <!-- Mobile Menu -->
-        <link href="css/mmenu.css" rel="stylesheet" type="text/css" />
-        <link href="css/mmenu.positioning.css" rel="stylesheet" type="text/css" />
-
-        <link rel="stylesheet" type="text/css" href="css/jquery.accordion.css">
-
-        <!-- Stylesheet -->
-        <link href="style.css" rel="stylesheet" type="text/css" />
-
-        <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
-        <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
-        <!--[if lt IE 9]>
-        <script src="js/html5shiv.min.js"></script>
-        <script src="js/respond.min.js"></script>
-        <![endif]-->
-
-    </head>
 
     <body>
 
@@ -369,246 +338,359 @@
                             </section>
                             <!-- End: Search Section -->
                             <div class="row">
-                                <div class="col-md-9 col-md-push-3 news-events-list-view">
-                                    <div class="news-list-box">
-                                        <div class="single-news-list">
-                                            <div class="social-content">
-                                                <div class="social-share">
-                                                    <ul>
-                                                        <li><a href="#."><i class="fa fa-comment"></i> 37</a></li>
-                                                        <li><a href="#."><i class="fa fa-thumbs-o-up"></i> 110</a></li>
-                                                        <li><a href="#."><i class="fa fa-eye"></i> 180</a></li>
-                                                    </ul>
-                                                </div>
-                                                <div class="social-media">
-                                                    <ul>
-                                                        <li><a href="#." target="_blank"><i class="fa fa-facebook"></i></a></li>
-                                                        <li><a href="#." target="_blank"><i class="fa fa-twitter"></i></a></li>
-                                                        <li><a href="#." target="_blank"><i class="fa fa-google-plus"></i></a></li>
-                                                        <li><a href="#." target="_blank"><i class="fa fa-rss"></i></a></li>
-                                                        <li><a href="#." target="_blank"><i class="fa fa-linkedin"></i></a></li>
-                                                    </ul>
-                                                </div>
-                                            </div>
-                                            <figure>
-                                                <a href="news-events-detail.html"><img src="images/news-event/news-listing-01.jpg" alt="News &amp; Event"></a>
-                                            </figure>
-                                            <div class="content-block">
-                                                <div class="member-info">
-                                                    <div class="content_meta_category">
-                                                        <span class="arrow-right"></span>
-                                                        <a href="#." rel="category tag">EVENT</a>
+                                <div class="col-md-9 col-md-push-3">
+                                    <div class="news-list-detail">
+                                        <div class="news-list-box">
+                                            <div class="single-news-list">
+                                                <div class="social-content">
+                                                    <div class="social-share">
+                                                        <ul>
+                                                            <li><a href="#."><i class="fa fa-comment"></i> 37</a></li>
+                                                            <li><a href="#."><i class="fa fa-thumbs-o-up"></i> 110</a></li>
+                                                            <li><a href="#."><i class="fa fa-eye"></i> 180</a></li>
+                                                        </ul>
                                                     </div>
-                                                    <ul class="news-event-info">
-                                                        <li>
-                                                            <a href="#" target="_blank">
-                                                                <i class="fa fa-calendar"></i>
-                                                                July 25, 2016
-                                                            </a>
-                                                        </li>
-                                                        <li>
-                                                            <a href="#" target="_blank">
-                                                                <i class="fa fa-clock-o"></i>
-                                                                10:15 AM - 10:15 PM 
-                                                            </a>
-                                                        </li>
-                                                        <li>
-                                                            <a href="#" target="_blank">
-                                                                <i class="fa fa-map-marker"></i>
-                                                                New York, USA
-                                                            </a>
-                                                        </li>
-                                                    </ul>
-                                                    <h3><a href="news-events-detail.html">It uses a dictionary of over 200 Latin</a></h3>
-                                                    <p>Morbi in erat laoreet, eleifend mi sit amet, eleifend mauris. Duis magna turpis, semper ac ligula id, elementum hendrerit augue. Aliquam euismod sem ut justo ultrices, in eleifend sapien hendrerit. Vestibulum sollicitudin dapibus aliquet. Suspendisse a commodo ante. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Quisque bibendum est turpis, at tristique velit. Quisque bibendum est turpis, at tristique velit.</p>
-                                                    <a class="btn btn-primary" href="news-events-detail.html">Read More</a>
+                                                    <div class="social-media">
+                                                        <ul>
+                                                            <li><a href="#." target="_blank"><i class="fa fa-facebook"></i></a></li>
+                                                            <li><a href="#." target="_blank"><i class="fa fa-twitter"></i></a></li>
+                                                            <li><a href="#." target="_blank"><i class="fa fa-google-plus"></i></a></li>
+                                                            <li><a href="#." target="_blank"><i class="fa fa-rss"></i></a></li>
+                                                            <li><a href="#." target="_blank"><i class="fa fa-linkedin"></i></a></li>
+                                                        </ul>
+                                                    </div>
+                                                </div>
+                                                <figure>
+                                                    <img src="images/news-event/new-detail-img.jpg" alt="News &amp; Event">
+                                                </figure>
+                                                <div class="content-block">
+                                                    <div class="member-info">
+                                                        <div class="content_meta_category">
+                                                            <span class="arrow-right"></span>
+                                                            <a href="#." rel="category tag">EVENT</a>
+                                                        </div>
+                                                        <ul class="news-event-info">
+                                                            <li>
+                                                                <a href="#" target="_blank">
+                                                                    <i class="fa fa-calendar"></i>
+                                                                    July 25, 2016
+                                                                </a>
+                                                            </li>
+                                                            <li>
+                                                                <a href="#" target="_blank">
+                                                                    <i class="fa fa-clock-o"></i>
+                                                                    10:15 AM - 10:15 PM 
+                                                                </a>
+                                                            </li>
+                                                            <li>
+                                                                <a href="#" target="_blank">
+                                                                    <i class="fa fa-map-marker"></i>
+                                                                    New York, USA
+                                                                </a>
+                                                            </li>
+                                                        </ul>
+                                                        <h2>Curabitur leo elit, interdum nec pretium eu, convallis ut erat. Curabitur sagittis feugiat tortor eget vehicula.</h2>
+                                                        <p>Proin tincidunt molestie urna, non fringilla est pretium et. Proin dignissim porttitor quam, eget gravida ante accumsan et. Cras quis commodo massa. Nullam id mauris vel arcu ultricies hendrerit. Praesent hendrerit posuere risus, quis iaculis erat auctor non. Fusce bibendum in lorem ac pharetra. Mauris bibendum placerat massa non pellentesque. Maecenas interdum, nisl quis molestie gravida, sapien dui dictum urna, at pretium odio massa ut nibh. Nam sit amet eros ultricies leo ultrices sodales nec vel dui. Mauris imperdiet turpis sit amet lobortis efficitur. Mauris commodo nunc non risus auctor finibus. Ut egestas urna quis elit egestas, ac bibendum orci maximus. Maecenas risus magna, mollis et purus sit amet, pellentesque tempor lacus. Quisque dictum tortor ac est auctor, ut dapibus risus rutrum. Quisque porttitor turpis in sagittis porttitor. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Aenean egestas consequat porttitor. </p>
+                                                        <p>Praesent lorem felis, fringilla in feugiat a, pretium in erat. Mauris ultricies rhoncus justo, quis sollicitudin risus rutrum sed. Cras sit amet odio eget felis dignissim elementum sit amet a justo. Suspendisse sodales sem et fermentum luctus. Phasellus quis sapien tellus. Aenean sit amet est purus. Vestibulum justo risus, pharetra in sem eu, bibendum iaculis nisl. Aliquam pulvinar tellus vel ornare ultrices. Nam cursus varius egestas. Cras sed varius nulla, non volutpat diam. Sed ultricies dolor purus, vitae consectetur dolor imperdiet non. </p>
+                                                    </div>
+                                                </div>
+                                                <div class="clearfix"></div>
+                                            </div>
+                                        </div>
+                                        <div class="row">
+                                            <div class="col-xs-12 col-sm-5">
+                                                <div class="contact-info">
+                                                    <h3>Contact Info</h3>
+                                                    <span class="underline left"></span>
+                                                    <h5>Libraria – Downtown & Business</h5>
+                                                    <p>21 King Street, Melbourne</p>
+                                                    <p>Victoria 3000</p>
+                                                    <p>Australia</p>
+                                                    <h5>Libraria – Downtown & Business</h5>
+                                                    <p>Phone: + 012-345-6789</p>
+                                                    <p>Email: suport@virtualsoft.com</p>
+                                                    <p>Website: www.virtualsoft.com</p>
+                                                    <br>
+                                                    <img src="images/contact-location.jpg" alt="Google Map">
                                                 </div>
                                             </div>
-                                            <div class="clearfix"></div>
+                                            <div class="col-xs-12 col-sm-7">
+                                                <div class="events-calendar">
+                                                    <h3>Events Calendar</h3>
+                                                    <span class="underline left"></span>
+                                                    <div class="form-group">
+                                                        <label>Select a Category:</label>
+                                                        <select name="category" id="category1" class="form-control">
+                                                            <option>All Categories</option>
+                                                            <option>Category 01</option>
+                                                            <option>Category 02</option>
+                                                            <option>Category 03</option>
+                                                            <option>Category 04</option>
+                                                            <option>Category 05</option>
+                                                        </select>
+                                                    </div>
+                                                    <table class="event-table cart">
+                                                        <thead>                             
+                                                            <tr>
+                                                                <th class="product-name">Date/Time</th>
+                                                                <th class="product-name">Event</th>
+                                                            </tr>
+                                                        </thead>
+                                                        <tbody>
+                                                            <tr>
+                                                                <td data-title="date-time">
+                                                                    <a href="#" target="_blank">
+                                                                        <i class="fa fa-calendar"></i> 
+                                                                        July 25 - 
+                                                                    </a>
+                                                                    <a href="#" target="_blank">
+                                                                        <i class="fa fa-clock-o"></i> 
+                                                                        9:30 am
+                                                                    </a>
+                                                                </td>
+                                                                <td data-title="event">
+                                                                    Event Name Here
+                                                                </td>
+                                                            </tr>
+                                                            <tr>
+                                                                <td data-title="date-time">
+                                                                    <a href="#" target="_blank">
+                                                                        <i class="fa fa-calendar"></i> 
+                                                                        July 25 - 
+                                                                    </a>
+                                                                    <a href="#" target="_blank">
+                                                                        <i class="fa fa-clock-o"></i> 
+                                                                        9:30 am
+                                                                    </a>
+                                                                </td>
+                                                                <td data-title="event">
+                                                                    Event Name Here
+                                                                </td>
+                                                            </tr>
+                                                            <tr>
+                                                                <td data-title="date-time">
+                                                                    <a href="#" target="_blank">
+                                                                        <i class="fa fa-calendar"></i> 
+                                                                        July 25 - 
+                                                                    </a>
+                                                                    <a href="#" target="_blank">
+                                                                        <i class="fa fa-clock-o"></i> 
+                                                                        9:30 am
+                                                                    </a>
+                                                                </td>
+                                                                <td data-title="event">
+                                                                    Event Name Here
+                                                                </td>
+                                                            </tr>
+                                                            <tr>
+                                                                <td data-title="date-time">
+                                                                    <a href="#" target="_blank">
+                                                                        <i class="fa fa-calendar"></i> 
+                                                                        July 25 - 
+                                                                    </a>
+                                                                    <a href="#" target="_blank">
+                                                                        <i class="fa fa-clock-o"></i> 
+                                                                        9:30 am
+                                                                    </a>
+                                                                </td>
+                                                                <td data-title="event">
+                                                                    Event Name Here
+                                                                </td>
+                                                            </tr>
+                                                            <tr>
+                                                                <td data-title="date-time">
+                                                                    <a href="#" target="_blank">
+                                                                        <i class="fa fa-calendar"></i> 
+                                                                        July 25 - 
+                                                                    </a>
+                                                                    <a href="#" target="_blank">
+                                                                        <i class="fa fa-clock-o"></i> 
+                                                                        9:30 am
+                                                                    </a>
+                                                                </td>
+                                                                <td data-title="event">
+                                                                    Event Name Here
+                                                                </td>
+                                                            </tr>
+                                                            <tr>
+                                                                <td data-title="date-time">
+                                                                    <a href="#" target="_blank">
+                                                                        <i class="fa fa-calendar"></i> 
+                                                                        July 25 - 
+                                                                    </a>
+                                                                    <a href="#" target="_blank">
+                                                                        <i class="fa fa-clock-o"></i> 
+                                                                        9:30 am
+                                                                    </a>
+                                                                </td>
+                                                                <td data-title="event">
+                                                                    Event Name Here
+                                                                </td>
+                                                            </tr>
+                                                        </tbody>
+                                                    </table>
+                                                    <div class="clear"></div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="related-event text-center">
+                                            <h2>Related Event</h2>
+                                            <span class="underline center"></span>
+                                            <p class="lead">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                                            <div class="owl-carousel-event">
+                                                <div class="single-related-event">
+                                                    <figure>
+                                                        <a href="news-events-detail.html"><img src="images/news-event/related-event-01.jpg" alt="Related event"></a>
+                                                        <figcaption>
+                                                            <header>
+                                                                <ul class="news-event-info">
+                                                                    <li>
+                                                                        <a href="#" target="_blank">
+                                                                            <i class="fa fa-calendar"></i>
+                                                                            July 25, 2016
+                                                                        </a>
+                                                                    </li>
+                                                                    <li>
+                                                                        <a href="#" target="_blank">
+                                                                            <i class="fa fa-map-marker"></i>
+                                                                            New York, USA
+                                                                        </a>
+                                                                    </li>
+                                                                </ul>
+                                                                <h4><a href=".html#">It uses a dictionary of over 200 Latin word</a></h4>
+                                                            </header>
+                                                            <p>It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout.</p>
+                                                        </figcaption>
+                                                    </figure> 
+                                                </div>
+                                                <div class="single-related-event">
+                                                    <figure>
+                                                        <a href="news-events-detail.html"><img src="images/news-event/related-event-02.jpg" alt="Related event"></a>
+                                                        <figcaption>
+                                                            <header>
+                                                                <ul class="news-event-info">
+                                                                    <li>
+                                                                        <a href="#" target="_blank">
+                                                                            <i class="fa fa-calendar"></i>
+                                                                            July 25, 2016
+                                                                        </a>
+                                                                    </li>
+                                                                    <li>
+                                                                        <a href="#" target="_blank">
+                                                                            <i class="fa fa-map-marker"></i>
+                                                                            New York, USA
+                                                                        </a>
+                                                                    </li>
+                                                                </ul>
+                                                                <h4><a href=".html#">It uses a dictionary of over 200 Latin word</a></h4>
+                                                            </header>
+                                                            <p>It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout.</p>
+                                                        </figcaption>
+                                                    </figure> 
+                                                </div>
+                                                <div class="single-related-event">
+                                                    <figure>
+                                                        <a href="news-events-detail.html"><img src="images/news-event/related-event-03.jpg" alt="Related event"></a>
+                                                        <figcaption>
+                                                            <header>
+                                                                <ul class="news-event-info">
+                                                                    <li>
+                                                                        <a href="#" target="_blank">
+                                                                            <i class="fa fa-calendar"></i>
+                                                                            July 25, 2016
+                                                                        </a>
+                                                                    </li>
+                                                                    <li>
+                                                                        <a href="#" target="_blank">
+                                                                            <i class="fa fa-map-marker"></i>
+                                                                            New York, USA
+                                                                        </a>
+                                                                    </li>
+                                                                </ul>
+                                                                <h4><a href=".html#">It uses a dictionary of over 200 Latin word</a></h4>
+                                                            </header>
+                                                            <p>It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout.</p>
+                                                        </figcaption>
+                                                    </figure> 
+                                                </div>
+                                                <div class="single-related-event">
+                                                    <figure>
+                                                        <a href="news-events-detail.html"><img src="images/news-event/related-event-01.jpg" alt="Related event"></a>
+                                                        <figcaption>
+                                                            <header>
+                                                                <ul class="news-event-info">
+                                                                    <li>
+                                                                        <a href="#" target="_blank">
+                                                                            <i class="fa fa-calendar"></i>
+                                                                            July 25, 2016
+                                                                        </a>
+                                                                    </li>
+                                                                    <li>
+                                                                        <a href="#" target="_blank">
+                                                                            <i class="fa fa-map-marker"></i>
+                                                                            New York, USA
+                                                                        </a>
+                                                                    </li>
+                                                                </ul>
+                                                                <h4><a href=".html#">It uses a dictionary of over 200 Latin word</a></h4>
+                                                            </header>
+                                                            <p>It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout.</p>
+                                                        </figcaption>
+                                                    </figure> 
+                                                </div>
+                                                <div class="single-related-event">
+                                                    <figure>
+                                                        <a href="news-events-detail.html"><img src="images/news-event/related-event-02.jpg" alt="Related event"></a>
+                                                        <figcaption>
+                                                            <header>
+                                                                <ul class="news-event-info">
+                                                                    <li>
+                                                                        <a href="#" target="_blank">
+                                                                            <i class="fa fa-calendar"></i>
+                                                                            July 25, 2016
+                                                                        </a>
+                                                                    </li>
+                                                                    <li>
+                                                                        <a href="#" target="_blank">
+                                                                            <i class="fa fa-map-marker"></i>
+                                                                            New York, USA
+                                                                        </a>
+                                                                    </li>
+                                                                </ul>
+                                                                <h4><a href=".html#">It uses a dictionary of over 200 Latin word</a></h4>
+                                                            </header>
+                                                            <p>It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout.</p>
+                                                        </figcaption>
+                                                    </figure> 
+                                                </div>
+                                                <div class="single-related-event">
+                                                    <figure>
+                                                        <a href="news-events-detail.html"><img src="images/news-event/related-event-03.jpg" alt="Related event"></a>
+                                                        <figcaption>
+                                                            <header>
+                                                                <ul class="news-event-info">
+                                                                    <li>
+                                                                        <a href="#" target="_blank">
+                                                                            <i class="fa fa-calendar"></i>
+                                                                            July 25, 2016
+                                                                        </a>
+                                                                    </li>
+                                                                    <li>
+                                                                        <a href="#" target="_blank">
+                                                                            <i class="fa fa-map-marker"></i>
+                                                                            New York, USA
+                                                                        </a>
+                                                                    </li>
+                                                                </ul>
+                                                                <h4><a href=".html#">It uses a dictionary of over 200 Latin word</a></h4>
+                                                            </header>
+                                                            <p>It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout.</p>
+                                                        </figcaption>
+                                                    </figure> 
+                                                </div>
+                                            </div>
                                         </div>
                                     </div>
-                                    <div class="news-list-box">
-                                        <div class="single-news-list">
-                                            <div class="social-content">
-                                                <div class="social-share">
-                                                    <ul>
-                                                        <li><a href="#."><i class="fa fa-comment"></i> 37</a></li>
-                                                        <li><a href="#."><i class="fa fa-thumbs-o-up"></i> 110</a></li>
-                                                        <li><a href="#."><i class="fa fa-eye"></i> 180</a></li>
-                                                    </ul>
-                                                </div>
-                                                <div class="social-media">
-                                                    <ul>
-                                                        <li><a href="#." target="_blank"><i class="fa fa-facebook"></i></a></li>
-                                                        <li><a href="#." target="_blank"><i class="fa fa-twitter"></i></a></li>
-                                                        <li><a href="#." target="_blank"><i class="fa fa-google-plus"></i></a></li>
-                                                        <li><a href="#." target="_blank"><i class="fa fa-rss"></i></a></li>
-                                                        <li><a href="#." target="_blank"><i class="fa fa-linkedin"></i></a></li>
-                                                    </ul>
-                                                </div>
-                                            </div>
-                                            <figure>
-                                                <a href="news-events-detail.html"><img src="images/news-event/news-listing-02.jpg" alt="News &amp; Event"></a>
-                                            </figure>
-                                            <div class="content-block">
-                                                <div class="member-info">
-                                                    <div class="content_meta_category">
-                                                        <span class="arrow-right"></span>
-                                                        <a href="#." rel="category tag">EVENT</a>
-                                                    </div>
-                                                    <ul class="news-event-info">
-                                                        <li>
-                                                            <a href="#" target="_blank">
-                                                                <i class="fa fa-calendar"></i>
-                                                                July 25, 2016
-                                                            </a>
-                                                        </li>
-                                                        <li>
-                                                            <a href="#" target="_blank">
-                                                                <i class="fa fa-clock-o"></i>
-                                                                10:15 AM - 10:15 PM 
-                                                            </a>
-                                                        </li>
-                                                        <li>
-                                                            <a href="#" target="_blank">
-                                                                <i class="fa fa-map-marker"></i>
-                                                                New York, USA
-                                                            </a>
-                                                        </li>
-                                                    </ul>
-                                                    <h3><a href="news-events-detail.html">It uses a dictionary of over 200 Latin</a></h3>
-                                                    <p>Morbi in erat laoreet, eleifend mi sit amet, eleifend mauris. Duis magna turpis, semper ac ligula id, elementum hendrerit augue. Aliquam euismod sem ut justo ultrices, in eleifend sapien hendrerit. Vestibulum sollicitudin dapibus aliquet. Suspendisse a commodo ante. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Quisque bibendum est turpis, at tristique velit. Quisque bibendum est turpis, at tristique velit.</p>
-                                                    <a class="btn btn-primary" href="news-events-detail.html">Read More</a>
-                                                </div>
-                                            </div>
-                                            <div class="clearfix"></div>
-                                        </div>
-                                    </div>
-                                    <div class="news-list-box">
-                                        <div class="single-news-list">
-                                            <div class="social-content">
-                                                <div class="social-share">
-                                                    <ul>
-                                                        <li><a href="#."><i class="fa fa-comment"></i> 37</a></li>
-                                                        <li><a href="#."><i class="fa fa-thumbs-o-up"></i> 110</a></li>
-                                                        <li><a href="#."><i class="fa fa-eye"></i> 180</a></li>
-                                                    </ul>
-                                                </div>
-                                                <div class="social-media">
-                                                    <ul>
-                                                        <li><a href="#." target="_blank"><i class="fa fa-facebook"></i></a></li>
-                                                        <li><a href="#." target="_blank"><i class="fa fa-twitter"></i></a></li>
-                                                        <li><a href="#." target="_blank"><i class="fa fa-google-plus"></i></a></li>
-                                                        <li><a href="#." target="_blank"><i class="fa fa-rss"></i></a></li>
-                                                        <li><a href="#." target="_blank"><i class="fa fa-linkedin"></i></a></li>
-                                                    </ul>
-                                                </div>
-                                            </div>
-                                            <figure>
-                                                <a href="news-events-detail.html"><img src="images/news-event/news-listing-03.jpg" alt="News &amp; Event"></a>
-                                            </figure>
-                                            <div class="content-block">
-                                                <div class="member-info">
-                                                    <div class="content_meta_category">
-                                                        <span class="arrow-right"></span>
-                                                        <a href="#." rel="category tag">EVENT</a>
-                                                    </div>
-                                                    <ul class="news-event-info">
-                                                        <li>
-                                                            <a href="#" target="_blank">
-                                                                <i class="fa fa-calendar"></i>
-                                                                July 25, 2016
-                                                            </a>
-                                                        </li>
-                                                        <li>
-                                                            <a href="#" target="_blank">
-                                                                <i class="fa fa-clock-o"></i>
-                                                                10:15 AM - 10:15 PM 
-                                                            </a>
-                                                        </li>
-                                                        <li>
-                                                            <a href="#" target="_blank">
-                                                                <i class="fa fa-map-marker"></i>
-                                                                New York, USA
-                                                            </a>
-                                                        </li>
-                                                    </ul>
-                                                    <h3><a href="news-events-detail.html">It uses a dictionary of over 200 Latin</a></h3>
-                                                    <p>Morbi in erat laoreet, eleifend mi sit amet, eleifend mauris. Duis magna turpis, semper ac ligula id, elementum hendrerit augue. Aliquam euismod sem ut justo ultrices, in eleifend sapien hendrerit. Vestibulum sollicitudin dapibus aliquet. Suspendisse a commodo ante. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Quisque bibendum est turpis, at tristique velit. Quisque bibendum est turpis, at tristique velit.</p>
-                                                    <a class="btn btn-primary" href="news-events-detail.html">Read More</a>
-                                                </div>
-                                            </div>
-                                            <div class="clearfix"></div>
-                                        </div>
-                                    </div>
-                                    <div class="news-list-box">
-                                        <div class="single-news-list">
-                                            <div class="social-content">
-                                                <div class="social-share">
-                                                    <ul>
-                                                        <li><a href="#."><i class="fa fa-comment"></i> 37</a></li>
-                                                        <li><a href="#."><i class="fa fa-thumbs-o-up"></i> 110</a></li>
-                                                        <li><a href="#."><i class="fa fa-eye"></i> 180</a></li>
-                                                    </ul>
-                                                </div>
-                                                <div class="social-media">
-                                                    <ul>
-                                                        <li><a href="#." target="_blank"><i class="fa fa-facebook"></i></a></li>
-                                                        <li><a href="#." target="_blank"><i class="fa fa-twitter"></i></a></li>
-                                                        <li><a href="#." target="_blank"><i class="fa fa-google-plus"></i></a></li>
-                                                        <li><a href="#." target="_blank"><i class="fa fa-rss"></i></a></li>
-                                                        <li><a href="#." target="_blank"><i class="fa fa-linkedin"></i></a></li>
-                                                    </ul>
-                                                </div>
-                                            </div>
-                                            <figure>
-                                                <a href="news-events-detail.html"><img src="images/news-event/news-listing-04.jpg" alt="News &amp; Event"></a>
-                                            </figure>
-                                            <div class="content-block">
-                                                <div class="member-info">
-                                                    <div class="content_meta_category">
-                                                        <span class="arrow-right"></span>
-                                                        <a href="#." rel="category tag">EVENT</a>
-                                                    </div>
-                                                    <ul class="news-event-info">
-                                                        <li>
-                                                            <a href="#" target="_blank">
-                                                                <i class="fa fa-calendar"></i>
-                                                                July 25, 2016
-                                                            </a>
-                                                        </li>
-                                                        <li>
-                                                            <a href="#" target="_blank">
-                                                                <i class="fa fa-clock-o"></i>
-                                                                10:15 AM - 10:15 PM 
-                                                            </a>
-                                                        </li>
-                                                        <li>
-                                                            <a href="#" target="_blank">
-                                                                <i class="fa fa-map-marker"></i>
-                                                                New York, USA
-                                                            </a>
-                                                        </li>
-                                                    </ul>
-                                                    <h3><a href="news-events-detail.html">It uses a dictionary of over 200 Latin</a></h3>
-                                                    <p>Morbi in erat laoreet, eleifend mi sit amet, eleifend mauris. Duis magna turpis, semper ac ligula id, elementum hendrerit augue. Aliquam euismod sem ut justo ultrices, in eleifend sapien hendrerit. Vestibulum sollicitudin dapibus aliquet. Suspendisse a commodo ante. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Quisque bibendum est turpis, at tristique velit. Quisque bibendum est turpis, at tristique velit.</p>
-                                                    <a class="btn btn-primary" href="news-events-detail.html">Read More</a>
-                                                </div>
-                                            </div>
-                                            <div class="clearfix"></div>
-                                        </div>
-                                    </div>
-                                    <nav class="navigation pagination text-center">
-                                        <h2 class="screen-reader-text">Posts navigation</h2>
-                                        <div class="nav-links">
-                                            <a class="prev page-numbers" href="#."><i class="fa fa-long-arrow-left"></i> Previous</a>
-                                            <a class="page-numbers" href="#.">1</a>
-                                            <span class="page-numbers current">2</span>
-                                            <a class="page-numbers" href="#.">3</a>
-                                            <a class="page-numbers" href="#.">4</a>
-                                            <a class="next page-numbers" href="#.">Next <i class="fa fa-long-arrow-right"></i></a>
-                                        </div>
-                                    </nav>
                                 </div>
                                 <div class="col-md-3 col-md-pull-9">
                                     <aside id="secondary" class="sidebar widget-area">
@@ -880,56 +962,10 @@
         </footer>
         <!-- End: Footer -->
 
-        <!-- jQuery Latest Version 1.x -->
-        <script type="text/javascript" src="js/jquery-1.12.4.min.js"></script>
-        
-        <!-- jQuery UI -->
-        <script type="text/javascript" src="js/jquery-ui.min.js"></script>
-        
-        <!-- jQuery Easing -->
-        <script type="text/javascript" src="js/jquery.easing.1.3.js"></script>
+  
 
-        <!-- Bootstrap -->
-        <script type="text/javascript" src="js/bootstrap.min.js"></script>
         
-        <!-- Mobile Menu -->
-        <script type="text/javascript" src="js/mmenu.min.js"></script>
-        
-        <!-- Harvey - State manager for media queries -->
-        <script type="text/javascript" src="js/harvey.min.js"></script>
-        
-        <!-- Waypoints - Load Elements on View -->
-        <script type="text/javascript" src="js/waypoints.min.js"></script>
-
-        <!-- Facts Counter -->
-        <script type="text/javascript" src="js/facts.counter.min.js"></script>
-
-        <!-- MixItUp - Category Filter -->
-        <script type="text/javascript" src="js/mixitup.min.js"></script>
-
-        <!-- Owl Carousel -->
-        <script type="text/javascript" src="js/owl.carousel.min.js"></script>
-        
-        <!-- Accordion -->
-        <script type="text/javascript" src="js/accordion.min.js"></script>
-        
-        <!-- Responsive Tabs -->
-        <script type="text/javascript" src="js/responsive.tabs.min.js"></script>
-        
-        <!-- Responsive Table -->
-        <script type="text/javascript" src="js/responsive.table.min.js"></script>
-        
-        <!-- Masonry -->
-        <script type="text/javascript" src="js/masonry.min.js"></script>
-        
-        <!-- Carousel Swipe -->
-        <script type="text/javascript" src="js/carousel.swipe.min.js"></script>
-        
-        <!-- bxSlider -->
-        <script type="text/javascript" src="js/bxslider.min.js"></script>
-        
-        <!-- Custom Scripts -->
-        <script type="text/javascript" src="js/main.js"></script>
+        @include('library.footer_inc')
 
     </body>
 
