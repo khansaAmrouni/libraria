@@ -4,8 +4,7 @@
     </div>
 
     <div class="mt-8 text-2xl">
-        Welcome to your Jetstream application!
-    </div>
+Bienvenue dans notre site    </div>
 
     <div class="mt-6 text-gray-500">
         Laravel Jetstream provides a beautiful, robust starting point for your next Laravel application. Laravel is designed
