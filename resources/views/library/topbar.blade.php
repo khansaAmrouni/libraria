@@ -28,7 +28,9 @@
                                         </div>
                                         <div class="col-sm-6">
                                             <div class="topbar-links">
-                                                <a href="{{route('signin')}}"><i class="fa fa-lock"></i>Login / Register</a>
+                                                <a href="{{route('login')}}"><i class="fa fa-lock"></i>Login/</a>
+                                                <a href="{{route('register')}}">Register</a>
+
                                                 <span>|</span>
                                                 <div class="header-cart dropdown">
                                                     <a data-toggle="dropdown" class="dropdown-toggle" href="#">
@@ -117,7 +119,9 @@
                                             <ul class="dropdown-menu">
                                                 <li><a href="{{route('cart')}}">Cart</a></li>
                                                 <li><a href="{{route('checkout')}}">Checkout</a></li>
-                                                <li><a href="{{route('signin')}}">Signin/Register</a></li>
+                                                <li><a href="{{route('login')}}">Signin</a></li>
+                                                <li><a href="{{route('register')}}">Register</a></li>
+
                                                 <li><a href="{{route('404')}}">404/Error</a></li>
                                             </ul>
                                         </li>
@@ -172,7 +176,9 @@
                                         <ul>
                                             <li><a href="{{route('cart')}}">Cart</a></li>
                                             <li><a href="{{route('checkout')}}">Checkout</a></li>
-                                            <li><a href="{{route('signin')}}">Signin/Register</a></li>
+                                            <li><a href="{{route('login')}}">Signin</a></li>
+                                            <li><a href="{{route('register')}}">Register</a></li>
+
                                             <li><a href="{{route('404')}}">404/Error</a></li>
                                         </ul>
                                     </li>

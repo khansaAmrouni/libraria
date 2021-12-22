@@ -18,7 +18,9 @@ Route::get('/', function () {
 })->name('index');
 
 
-
+Route::get('/welcome', function () {
+    return view('welcome');
+})->name('welcome');
 
 
 Route::get('/404', function () {
