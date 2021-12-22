@@ -28,8 +28,18 @@
                                         </div>
                                         <div class="col-sm-6">
                                             <div class="topbar-links">
-                                                <a href="{{route('login')}}"><i class="fa fa-lock"></i>Login/</a>
+                                            @auth
+                                            <a href="{{route('dashboard')}}"><i class="fa fa-lock"></i>{{Auth::user()->name}}</a>
+                                            <a href="{{route('disconnect')}}" class="deconnect">Déconnecter</a>
+
+
+@endauth
+
+@guest
+<a href="{{route('login')}}"><i class="fa fa-lock"></i>Login/</a>
                                                 <a href="{{route('register')}}">Register</a>
+                                                
+                                                @endguest
 
                                                 <span>|</span>
                                                 <div class="header-cart dropdown">

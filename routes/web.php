@@ -107,3 +107,12 @@ Route::get('/checkout', function () {
 Route::middleware(['auth:sanctum', 'verified'])->get('/dashboard', function () {
     return view('dashboard');
 })->name('dashboard');
+
+
+
+Route::get('/disconnect', function () {
+    Auth::logout();
+
+
+    return redirect('/');
+})->name('disconnect');

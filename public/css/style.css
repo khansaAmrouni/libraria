@@ -63,6 +63,10 @@ html {
   -ms-text-size-adjust: 100%;
   -webkit-text-size-adjust: 100%;
 }
+
+a.deconnect {
+  margin-left: 16px;
+}
 body {
   margin: 0;
 }
