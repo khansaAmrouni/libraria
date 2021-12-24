@@ -18,7 +18,7 @@
                 </div>
                 <div class="breadcrumb">
                     <ul>
-                        <li><a href="index-2.html">Home</a></li>
+                        <li><a href="{{route('index')}}">Home</a></li>
                         <li>Blog</li>
                     </ul>
                 </div>

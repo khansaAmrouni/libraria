@@ -1,7 +1,7 @@
 <?php
 
 use Illuminate\Support\Facades\Route;
-
+use App\Http\Controllers\BlogController;
 /*
 |--------------------------------------------------------------------------
 | Web Routes
@@ -13,19 +13,34 @@ use Illuminate\Support\Facades\Route;
 |
 */
 
-Route::get('/', function () {
-    return view('library.index');
-})->name('index');
 
+
+/* Route::get('/signin', function () {
+    return view('library.signin');
+})->name('signin'); */
 
 /* Route::get('/welcome', function () {
     return view('welcome');
 })->name('welcome'); */
 
 
-Route::get('/blog', function () {
-    return view('library.blog');
-})->name('blog');
+
+
+
+
+Route::get('/', function () {
+    return view('library.index');
+})->name('index');
+
+
+
+
+
+
+Route::get('/blog', [BlogController::class, 'show_all_blogs'])->name('blog');
+
+
+
 
 Route::get('/blog-detail', function () {
     return view('library.blog-detail');
@@ -76,9 +91,7 @@ Route::get('/services', function () {
     return view('library.services');
 })->name('services');
 
-/* Route::get('/signin', function () {
-    return view('library.signin');
-})->name('signin'); */
+
 
 
 
