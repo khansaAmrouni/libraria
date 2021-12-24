@@ -18,14 +18,10 @@ Route::get('/', function () {
 })->name('index');
 
 
-Route::get('/welcome', function () {
+/* Route::get('/welcome', function () {
     return view('welcome');
-})->name('welcome');
+})->name('welcome'); */
 
-
-Route::get('/404', function () {
-    return view('library.404');
-})->name('404');
 
 Route::get('/blog', function () {
     return view('library.blog');
@@ -63,17 +59,6 @@ Route::get('/contact', function () {
     return view('library.contact');
 })->name('contact');
 
-Route::get('/home-v2', function () {
-    return view('library.home-v2');
-})->name('home-v2');
-
-Route::get('/home-v3', function () {
-    return view('library.home-v3');
-})->name('home-v3');
-
-Route::get('/index-2', function () {
-    return view('library.index-2');
-})->name('index-2');
 
 Route::get('/news-events-detail', function () {
     return view('library.news-events-detail');
@@ -91,9 +76,9 @@ Route::get('/services', function () {
     return view('library.services');
 })->name('services');
 
-Route::get('/signin', function () {
+/* Route::get('/signin', function () {
     return view('library.signin');
-})->name('signin');
+})->name('signin'); */
 
 
 

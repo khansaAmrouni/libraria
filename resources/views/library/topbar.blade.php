@@ -101,21 +101,15 @@
                                     <ul class="nav navbar-nav">
                                         <li class="dropdown active">
                                             <a data-toggle="dropdown" class="dropdown-toggle disabled" href="{{route('index')}}">Home</a>
-                                       <!--      <ul class="dropdown-menu">
-                                                <li><a href="{route('index-2')}}">Home V1</a></li>
-                                                <li><a href="{{route('home-v2')}}">Home V2</a></li>
-                                                <li><a href="{{route('home-v3')}}">Home V3</a></li>
-                                            </ul> -->
+                                 
                                         </li>
                                         <li class="dropdown">
                                             <a data-toggle="dropdown" class="dropdown-toggle disabled" href="{{route('books-media-list-view')}}">Books &amp; Media</a>
                                             <ul class="dropdown-menu">
                                                 <li><a href="{{route('books-media-list-view')}}">Books &amp; Media List View</a></li>
                                                 <li><a href="{{route('books-media-gird-view-v1')}}">Books &amp; Media Grid View V1</a></li>
-<!--                                                 <li><a href="{{route('books-media-gird-view-v2')}}">Books &amp; Media Grid View V2</a></li>
- -->                                                <li><a href="{{route('books-media-detail-v1')}}">Books &amp; Media Detail V1</a></li>
-<!--                                                 <li><a href="{{route('books-media-detail-v2')}}">Books &amp; Media Detail V2</a></li>
- -->                                            </ul>
+                                               <li><a href="{{route('books-media-detail-v1')}}">Books &amp; Media Detail V1</a></li>
+                                          </ul>
                                         </li>
                                         <li class="dropdown">
                                             <a data-toggle="dropdown" class="dropdown-toggle disabled" href="{{route('news-events-list-view')}}">News &amp; Events</a>
@@ -124,17 +118,7 @@
                                                 <li><a href="{{route('news-events-detail')}}">News &amp; Events Detail</a></li>
                                             </ul>
                                         </li>
-                                        <li class="dropdown">
-                                            <a data-toggle="dropdown" class="dropdown-toggle disabled" href="#">Pages</a>
-                                            <ul class="dropdown-menu">
-                                                <li><a href="{{route('cart')}}">Cart</a></li>
-                                                <li><a href="{{route('checkout')}}">Checkout</a></li>
-                                                <li><a href="{{route('login')}}">Signin</a></li>
-                                                <li><a href="{{route('register')}}">Register</a></li>
-
-                                                <li><a href="{{route('404')}}">404/Error</a></li>
-                                            </ul>
-                                        </li>
+                               
                                         <li class="dropdown">
                                             <a data-toggle="dropdown" class="dropdown-toggle disabled" href="{{route('blog')}}">Blog</a>
                                             <ul class="dropdown-menu">
@@ -156,23 +140,14 @@
                                         <h4>Navigation</h4>
                                         <a href="#" class="close"></a>
                                     </li>
-                                    <li>
-                                        <a href="{{route('index-2')}}">Home</a>
-                                   <!--      <ul>
-                                            <li><a href="{{route('index-2')}}">Home V1</a></li>
-                                            <li><a href="{{route('home-v2')}}">Home V2</a></li>
-                                            <li><a href="{{route('home-v3')}}">Home V3</a></li>
-                                        </ul> -->
-                                    </li>
+                               
                                     <li>
                                         <a href="{{route('books-media-list-view')}}">Books &amp; Media</a>
                                         <ul>
                                             <li><a href="{{route('books-media-list-view')}}">Books &amp; Media List View</a></li>
                                             <li><a href="{{route('books-media-gird-view-v1')}}">Books &amp; Media Grid View V1</a></li>
-<!--                                             <li><a href="{{route('books-media-gird-view-v2')}}">Books &amp; Media Grid View V2</a></li>
- -->                                            <li><a href="{{route('books-media-detail-v1')}}">Books &amp; Media Detail V1</a></li>
-<!--                                             <li><a href="{{route('books-media-detail-v2')}}">Books &amp; Media Detail V2</a></li>
- -->                                        </ul>
+                                          <li><a href="{{route('books-media-detail-v1')}}">Books &amp; Media Detail V1</a></li>
+                                      </ul>
                                     </li>
                                     <li>
                                         <a href="{{route('news-events-list-view')}}">News &amp; Events</a>
@@ -181,17 +156,7 @@
                                             <li><a href="{{route('news-events-detail')}}">News &amp; Events Detail</a></li>
                                         </ul>
                                     </li>
-                                    <li>
-                                        <a href="#">Pages</a>
-                                        <ul>
-                                            <li><a href="{{route('cart')}}">Cart</a></li>
-                                            <li><a href="{{route('checkout')}}">Checkout</a></li>
-                                            <li><a href="{{route('login')}}">Signin</a></li>
-                                            <li><a href="{{route('register')}}">Register</a></li>
-
-                                            <li><a href="{{route('404')}}">404/Error</a></li>
-                                        </ul>
-                                    </li>
+                               
                                     <li>
                                         <a href="{{route('blog')}}">Blog</a>
                                         <ul>
