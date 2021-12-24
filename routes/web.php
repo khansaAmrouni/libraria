@@ -41,10 +41,9 @@ Route::get('/blog', [BlogController::class, 'show_all_blogs'])->name('blog');
 
 
 
+Route::get('/blog-detail/{num}', [BlogController::class, 'blog_detail'])->name('blog-detail');
 
-Route::get('/blog-detail', function () {
-    return view('library.blog-detail');
-})->name('blog-detail');
+
 
 Route::get('/books-media-detail-v1', function () {
     return view('library.books-media-detail-v1');

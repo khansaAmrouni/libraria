@@ -105,26 +105,16 @@
                                         </li>
                                         <li class="dropdown">
                                             <a data-toggle="dropdown" class="dropdown-toggle disabled" href="{{route('books-media-list-view')}}">Books &amp; Media</a>
-                                      <!--       <ul class="dropdown-menu">
-                                                <li><a href="{{route('books-media-list-view')}}">Books &amp; Media List View</a></li>
-                                                <li><a href="{{route('books-media-gird-view-v1')}}">Books &amp; Media Grid View V1</a></li>
-                                               <li><a href="{{route('books-media-detail-v1')}}">Books &amp; Media Detail V1</a></li>
-                                          </ul> -->
+                         
                                         </li>
                                         <li class="dropdown">
                                             <a data-toggle="dropdown" class="dropdown-toggle disabled" href="{{route('news-events-list-view')}}">News &amp; Events</a>
-                                      <!--       <ul class="dropdown-menu">
-                                                <li><a href="{{route('news-events-list-view')}}">News &amp; Events List View</a></li>
-                                                <li><a href="{{route('news-events-detail')}}">News &amp; Events Detail</a></li>
-                                            </ul> -->
+                             
                                         </li>
                                
                                         <li class="dropdown">
                                             <a data-toggle="dropdown" class="dropdown-toggle disabled" href="{{route('blog')}}">Blog</a>
-                                       <!--      <ul class="dropdown-menu">
-                                                <li><a href="{{route('blog')}}">Blog Grid View</a></li>
-                                                <li><a href="{{route('blog-detail')}}">Blog Detail</a></li>
-                                            </ul> -->
+                                   
                                         </li>
                                         <li><a href="{{route('services')}}">Services</a></li>
                                         <li><a href="{{route('contact')}}">Contact</a></li>
@@ -143,25 +133,17 @@
                                
                                     <li>
                                         <a href="{{route('books-media-list-view')}}">Books &amp; Media</a>
-                                   <!--      <ul>
-                                            <li><a href="{{route('books-media-list-view')}}">Books &amp; Media List View</a></li>
-                                            <li><a href="{{route('books-media-gird-view-v1')}}">Books &amp; Media Grid View V1</a></li>
-                                          <li><a href="{{route('books-media-detail-v1')}}">Books &amp; Media Detail V1</a></li>
-                                      </ul> -->
+                                
                                     </li>
                                     <li>
                                         <a href="{{route('news-events-list-view')}}">News &amp; Events</a>
-                                   <!--      <ul>
-                                            <li><a href="{{route('news-events-list-view')}}">News &amp; Events List View</a></li>
-                                            <li><a href="{{route('news-events-detail')}}">News &amp; Events Detail</a></li>
-                                        </ul> -->
+                                  
                                     </li>
                                
                                     <li>
                                         <a href="{{route('blog')}}">Blog</a>
                                         <ul>
-                                   <!--          <li><a href="{{route('blog')}}">Blog Grid View</a></li>
-                                            <li><a href="{{route('blog-detail')}}">Blog Detail</a></li> -->
+                            
                                         </ul>
                                     </li>
                                     <li><a href="{{route('services')}}">Services</a></li>
