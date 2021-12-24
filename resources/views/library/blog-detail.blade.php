@@ -19,8 +19,8 @@
                 </div>
                 <div class="breadcrumb">
                     <ul>
-                        <li><a href="index-2.html">Home</a></li>
-                        <li><a href="blog.html">Blog</a></li>
+                        <li><a href="{{route('index')}}">Home</a></li>
+                        <li><a href="{{url()->current()}}">Blog</a></li>
                         <li>Post Detail</li>
                     </ul>
                 </div>
@@ -60,7 +60,7 @@
                                                         </div>
                                                     </div>
                                                     <figure>
-                                                        <img alt="blog" src="images/blog/post-detail-img.jpg" />
+                                                        <img alt="blog" src="{{url('images/blog/post-detail-img.jpg')}}" />
                                                     </figure>
                                                 </div>
                                                 <div class="post-detail">
@@ -88,7 +88,7 @@
                                                     <div class="entry-content">
                                                         <p>Proin tincidunt molestie urna, non fringilla est pretium et. Proin dignissim porttitor quam, eget gravida ante accumsan et. Cras quis commodo massa. Nullam id mauris vel arcu ultricies hendrerit. Praesent hendrerit posuere risus, quis iaculis erat auctor non. Fusce bibendum in lorem ac pharetra. Mauris bibendum placerat massa non pellentesque. Maecenas interdum, nisl quis molestie gravida, sapien dui dictum urna, at pretium odio massa ut nibh. Nam sit amet eros ultricies leo ultrices sodales nec vel dui. Mauris imperdiet turpis sit amet lobortis efficitur. Mauris commodo nunc non risus auctor finibus. Ut egestas urna quis elit egestas, ac bibendum orci maximus. Maecenas risus magna, mollis et purus sit amet, pellentesque tempor lacus. Quisque dictum tortor ac est auctor, ut dapibus risus rutrum. Quisque porttitor turpis in sagittis porttitor. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Aenean egestas consequat porttitor.</p>
                                                         <p>Praesent lorem felis, fringilla in feugiat a, pretium in erat. Mauris ultricies rhoncus justo, quis sollicitudin risus rutrum sed. Cras sit amet odio eget felis dignissim elementum sit amet a justo. Suspendisse sodales sem et fermentum luctus. Phasellus quis sapien tellus. Aenean sit amet est purus. Vestibulum justo risus, pharetra in sem eu, bibendum iaculis nisl. Aliquam pulvinar tellus vel ornare ultrices. Nam cursus varius egestas. Cras sed varius nulla, non volutpat diam. Sed ultricies dolor purus, vitae consectetur dolor imperdiet non.</p>
-                                                        <img src="images/blog/post-detail-quote.jpg" class="align-left" alt="">
+                                                        <img src="{{url('images/blog/post-detail-quote.jpg')}}" class="align-left" alt="">
                                                         <blockquote>
                                                             Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.
                                                             <em>~ Adrey Pachai ~</em>
@@ -105,7 +105,7 @@
                                             </div>
                                         </article>
                                         <div class="about-author">
-                                            <img src="images/blog/about-author.jpg" alt="" />
+                                            <img src="{{url('images/blog/about-author.jpg')}}" alt="" />
                                             <div class="author-content">
                                                 <div class="author-head">
                                                     <h3>Tom Hanks</h3>
@@ -137,7 +137,7 @@
                                                     <li class="comment even thread-even depth-1 parent">
                                                         <div class="comment-body">
                                                             <div class="comment-author vcard">
-                                                                <img class="avatar avatar-32 photo avatar-default" src="images/blog/emma.jpg" alt="Comment Author">
+                                                                <img class="avatar avatar-32 photo avatar-default" src="{{url('images/blog/emma.jpg')}}" alt="Comment Author">
                                                                 <b class="fn">
                                                                     <a class="url" rel="external nofollow" href="#">Emma</a>
                                                                 </b>					
@@ -166,7 +166,7 @@
                                                             <li class="comment odd alt depth-2">
                                                                 <div class="comment-body">
                                                                     <div class="comment-author vcard">
-                                                                        <img class="avatar photo" src="images/blog/peter.jpg" alt="Comment Avatar">
+                                                                        <img class="avatar photo" src="{{url('images/blog/peter.jpg')}}" alt="Comment Avatar">
                                                                         <b class="fn">
                                                                             <a class="url" rel="external nofollow" href="#">Peter</a>
                                                                         </b>
@@ -194,7 +194,7 @@
                                                         </ol>
                                                         <div class="comment-body">
                                                             <div class="comment-author vcard">
-                                                                <img class="avatar avatar-32 photo avatar-default" src="images/blog/mathew.jpg" alt="Comment Author">
+                                                                <img class="avatar avatar-32 photo avatar-default" src="{{url('images/blog/mathew.jpg')}}" alt="Comment Author">
                                                                 <b class="fn">
                                                                     <a class="url" rel="external nofollow" href="#">Mathew</a>
                                                                 </b>					

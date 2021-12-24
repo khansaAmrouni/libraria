@@ -9,7 +9,7 @@
                                     <div class="navbar-brand">
                                         <h1>
                                             <a href="{{route('index')}}">
-                                                <img src="images/libraria-logo-v1.png" alt="LIBRARIA" />
+                                                <img src="{{url('images/libraria-logo-v1.png')}}" alt="LIBRARIA" />
                                             </a>
                                         </h1>
                                     </div>
@@ -50,7 +50,7 @@
                                                     <div class="dropdown-menu cart-dropdown">
                                                         <ul>
                                                             <li class="clearfix">
-                                                                <img src="images/header-cart-image-01.jpg" alt="cart item" />
+                                                                <img src="{{url('images/header-cart-image-01.jpg')}}" alt="cart item" />
                                                                 <div class="item-info">
                                                                     <div class="name">
                                                                         <a href="#">The Great Gatsby</a>
@@ -61,7 +61,7 @@
                                                                 <a class="remove" href="#"><i class="fa fa-trash-o"></i></a>
                                                             </li>
                                                             <li class="clearfix">
-                                                                <img src="images/header-cart-image-02.jpg" alt="cart item" />
+                                                                <img src="{{url('images/header-cart-image-02.jpg')}}" alt="cart item" />
                                                                 <div class="item-info">
                                                                     <div class="name">
                                                                         <a href="#">The Great Gatsby</a>
@@ -72,7 +72,7 @@
                                                                 <a class="remove" href="#"><i class="fa fa-trash-o"></i></a>
                                                             </li>
                                                             <li class="clearfix">
-                                                                <img src="images/header-cart-image-03.jpg" alt="cart item" />
+                                                                <img src="{{url('images/header-cart-image-03.jpg')}}" alt="cart item" />
                                                                 <div class="item-info">
                                                                     <div class="name">
                                                                         <a href="#">The Great Gatsby</a>
