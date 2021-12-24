@@ -12,7 +12,7 @@ class BlogController extends Controller
 
     public function show_all_blogs()
     {
-        return view('library.blog',['all_blog_data',Blog::all()]);
+        return view('library.blog',['all_blog_data' => Blog::all()]);
 
     }
 

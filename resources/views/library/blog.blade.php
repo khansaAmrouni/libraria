@@ -34,22 +34,23 @@
                         <div class="container">
                             <div class="row">
                                 <div class="blog-page grid">
+                                    @foreach ($all_blog_data as $single_blog_data)
                                     <article>
                                         <div class="grid-item blog-item">
                                             <div class="post-thumbnail">
                                                 <div class="post-date-box">
                                                     <div class="post-date">
-                                                        <a class="date" href="#.">07</a>
+                                                        <a class="date" href="#.">{{$single_blog_data->created_at->format('d')}}</a>
                                                     </div>
                                                     <div class="post-date-month">
-                                                        <a class="month" href="#.">Mar</a>
+                                                        <a class="month" href="#.">{{$single_blog_data->created_at->format('M')}}</a>
                                                     </div>
                                                 </div>
-                                                <a href="blog-detail.html"><img alt="blog" src="images/blog/blog-01.jpg" /></a>
+                                                <a href="{{route('blog-detail',['num'=>$single_blog_data->id])}}"><img alt="blog" src="{{'images/blog/blog-0'.$single_blog_data->id.'.jpg'}}" /></a>
                                                 <div class="post-share">
-                                                    <a href="#."><i class="fa fa-comment"></i> 37</a>
-                                                    <a href="#."><i class="fa fa-thumbs-o-up"></i> 110</a>
-                                                    <a href="#."><i class="fa fa-eye"></i> 180</a>
+                                                    <a href="#."><i class="fa fa-comment"></i> {{$single_blog_data->comments}}</a>
+                                                    <a href="#."><i class="fa fa-thumbs-o-up"></i> {{$single_blog_data->likes}}</a>
+                                                    <a href="#."><i class="fa fa-eye"></i> {{$single_blog_data->views}}</a>
                                                     <a href="#."><i class="fa fa-share-alt"></i> Share</a>
                                                 </div>
                                             </div>
@@ -57,352 +58,24 @@
                                                 <header class="entry-header">
                                                     <div class="blog_meta_category">
                                                         <span class="arrow-right"></span>
-                                                        <a href="#." rel="category tag">Design</a>, 
-                                                        <a href="#." rel="category tag">art</a>
+                                                        <a href="#." rel="category tag">{{$single_blog_data->theme}}</a>, 
                                                     </div>
-                                                    <h3 class="entry-title"><a href="blog-detail.html">Here each week my friends</a></h3>
+                                                    <h3 class="entry-title"><a href="{{route('blog-detail',['num'=>$single_blog_data->id])}}">{{$single_blog_data->title}}</a></h3>
                                                     <div class="entry-meta">
-                                                        <span><i class="fa fa-user"></i> <a href="#">Admin</a></span>
-                                                        <span><i class="fa fa-comment"></i> <a href="#">15 Comments</a></span>
+                                                        <span><i class="fa fa-user"></i> <a href="#">{{$single_blog_data->author}}</a></span>
+                                                        <span><i class="fa fa-comment"></i> <a href="#">{{$single_blog_data->comments}} Comments</a></span>
                                                     </div>
                                                 </header>
                                                 <div class="entry-content">
-                                                    <p>Curabitur sagittis fermentum ante at imperdiet. Proin viverra arcu ac quam finibus, efficitur rutrum turpis auctor. Maecenas at mi vitae lacus tempus egestas nec eget eros. Nunc eget est tellus. Quisque quis mattis eros, sit amet facilisis felis. Aliquam molestie purus venenatis lorem laoreet venenatis.....</p>
+                                                    <p>{{$single_blog_data->content}}</p>
                                                 </div>
                                                 <footer class="entry-footer">
-                                                    <a class="btn btn-default" href="blog-detail.html">Read More</a>
+                                                    <a class="btn btn-default" href="{{route('blog-detail',['num'=>$single_blog_data->id])}}">Read More</a>
                                                 </footer>
                                             </div>
                                         </div>
                                     </article>
-                                    <article>
-                                        <div class="grid-item blog-item">
-                                            <div class="post-thumbnail">
-                                                <div class="post-date-box">
-                                                    <div class="post-date">
-                                                        <a class="date" href="#.">07</a>
-                                                    </div>
-                                                    <div class="post-date-month">
-                                                        <a class="month" href="#.">Mar</a>
-                                                    </div>
-                                                </div>
-                                                <a href="blog-detail.html"><img alt="blog" src="images/blog/blog-02.jpg" /></a>
-                                                <div class="post-share">
-                                                    <a href="#."><i class="fa fa-comment"></i> 37</a>
-                                                    <a href="#."><i class="fa fa-thumbs-o-up"></i> 110</a>
-                                                    <a href="#."><i class="fa fa-eye"></i> 180</a>
-                                                    <a href="#."><i class="fa fa-share-alt"></i> Share</a>
-                                                </div>
-                                            </div>
-                                            <div class="post-detail">
-                                                <header class="entry-header">
-                                                    <div class="blog_meta_category">
-                                                        <span class="arrow-right"></span>
-                                                        <a href="#." rel="category tag">Design</a>, 
-                                                        <a href="#." rel="category tag">art</a>
-                                                    </div>
-                                                    <h3 class="entry-title"><a href="blog-detail.html">Here each week my friends</a></h3>
-                                                    <div class="entry-meta">
-                                                        <span><i class="fa fa-user"></i> <a href="#">Admin</a></span>
-                                                        <span><i class="fa fa-comment"></i> <a href="#">15 Comments</a></span>
-                                                    </div>
-                                                </header>
-                                                <div class="entry-content">
-                                                    <p>Curabitur sagittis fermentum ante at imperdiet. Proin viverra arcu ac quam finibus, efficitur rutrum turpis auctor. Maecenas at mi vitae lacus tempus egestas nec eget eros. Nunc eget est tellus. Quisque quis mattis eros, sit amet facilisis felis. Aliquam molestie purus venenatis lorem laoreet venenatis.....</p>
-                                                </div>
-                                                <footer class="entry-footer">
-                                                    <a class="btn btn-default" href="blog-detail.html">Read More</a>
-                                                </footer>
-                                            </div>
-                                        </div>
-                                    </article>
-                                    <article>
-                                        <div class="grid-item blog-item">
-                                            <div class="post-thumbnail">
-                                                <div class="post-date-box">
-                                                    <div class="post-date">
-                                                        <a class="date" href="#.">07</a>
-                                                    </div>
-                                                    <div class="post-date-month">
-                                                        <a class="month" href="#.">Mar</a>
-                                                    </div>
-                                                </div>
-                                                <a href="blog-detail.html"><img alt="blog" src="images/blog/blog-03.jpg" /></a>
-                                                <div class="post-share">
-                                                    <a href="#."><i class="fa fa-comment"></i> 37</a>
-                                                    <a href="#."><i class="fa fa-thumbs-o-up"></i> 110</a>
-                                                    <a href="#."><i class="fa fa-eye"></i> 180</a>
-                                                    <a href="#."><i class="fa fa-share-alt"></i> Share</a>
-                                                </div>
-                                            </div>
-                                            <div class="post-detail">
-                                                <header class="entry-header">
-                                                    <div class="blog_meta_category">
-                                                        <span class="arrow-right"></span>
-                                                        <a href="#." rel="category tag">Design</a>, 
-                                                        <a href="#." rel="category tag">art</a>
-                                                    </div>
-                                                    <h3 class="entry-title"><a href="blog-detail.html">Here each week my friends</a></h3>
-                                                    <div class="entry-meta">
-                                                        <span><i class="fa fa-user"></i> <a href="#">Admin</a></span>
-                                                        <span><i class="fa fa-comment"></i> <a href="#">15 Comments</a></span>
-                                                    </div>
-                                                </header>
-                                                <div class="entry-content">
-                                                    <p>Curabitur sagittis fermentum ante at imperdiet. Proin viverra arcu ac quam finibus, efficitur rutrum turpis auctor. Maecenas at mi vitae lacus tempus egestas nec eget eros. Nunc eget est tellus. Quisque quis mattis eros, sit amet facilisis felis. Aliquam molestie purus venenatis lorem laoreet venenatis.....</p>
-                                                </div>
-                                                <footer class="entry-footer">
-                                                    <a class="btn btn-default" href="blog-detail.html">Read More</a>
-                                                </footer>
-                                            </div>
-                                        </div>
-                                    </article>
-                                    <article>
-                                        <div class="grid-item blog-item">
-                                            <div class="post-thumbnail">
-                                                <div class="post-date-box">
-                                                    <div class="post-date">
-                                                        <a class="date" href="#.">07</a>
-                                                    </div>
-                                                    <div class="post-date-month">
-                                                        <a class="month" href="#.">Mar</a>
-                                                    </div>
-                                                </div>
-                                                <a href="blog-detail.html"><img alt="blog" src="images/blog/blog-05.jpg" /></a>
-                                                <div class="post-share">
-                                                    <a href="#."><i class="fa fa-comment"></i> 37</a>
-                                                    <a href="#."><i class="fa fa-thumbs-o-up"></i> 110</a>
-                                                    <a href="#."><i class="fa fa-eye"></i> 180</a>
-                                                    <a href="#."><i class="fa fa-share-alt"></i> Share</a>
-                                                </div>
-                                            </div>
-                                            <div class="post-detail">
-                                                <header class="entry-header">
-                                                    <div class="blog_meta_category">
-                                                        <span class="arrow-right"></span>
-                                                        <a href="#." rel="category tag">Design</a>, 
-                                                        <a href="#." rel="category tag">art</a>
-                                                    </div>
-                                                    <h3 class="entry-title"><a href="blog-detail.html">Here each week my friends</a></h3>
-                                                    <div class="entry-meta">
-                                                        <span><i class="fa fa-user"></i> <a href="#">Admin</a></span>
-                                                        <span><i class="fa fa-comment"></i> <a href="#">15 Comments</a></span>
-                                                    </div>
-                                                </header>
-                                                <div class="entry-content">
-                                                    <p>Curabitur sagittis fermentum ante at imperdiet. Proin viverra arcu ac quam finibus, efficitur rutrum turpis auctor. Maecenas at mi vitae lacus tempus egestas nec eget eros. Nunc eget est tellus. Quisque quis mattis eros, sit amet facilisis felis. Aliquam molestie purus venenatis lorem laoreet venenatis.....</p>
-                                                </div>
-                                                <footer class="entry-footer">
-                                                    <a class="btn btn-default" href="blog-detail.html">Read More</a>
-                                                </footer>
-                                            </div>
-                                        </div>
-                                    </article>
-                                    <article>
-                                        <div class="grid-item blog-item">
-                                            <div class="post-thumbnail">
-                                                <div class="post-date-box">
-                                                    <div class="post-date">
-                                                        <a class="date" href="#.">07</a>
-                                                    </div>
-                                                    <div class="post-date-month">
-                                                        <a class="month" href="#.">Mar</a>
-                                                    </div>
-                                                </div>
-                                                <a href="blog-detail.html"><img alt="blog" src="images/blog/blog-04.jpg" /></a>
-                                                <div class="post-share">
-                                                    <a href="#."><i class="fa fa-comment"></i> 37</a>
-                                                    <a href="#."><i class="fa fa-thumbs-o-up"></i> 110</a>
-                                                    <a href="#."><i class="fa fa-eye"></i> 180</a>
-                                                    <a href="#."><i class="fa fa-share-alt"></i> Share</a>
-                                                </div>
-                                            </div>
-                                            <div class="post-detail">
-                                                <header class="entry-header">
-                                                    <div class="blog_meta_category">
-                                                        <span class="arrow-right"></span>
-                                                        <a href="#." rel="category tag">Design</a>, 
-                                                        <a href="#." rel="category tag">art</a>
-                                                    </div>
-                                                    <h3 class="entry-title"><a href="blog-detail.html">Here each week my friends</a></h3>
-                                                    <div class="entry-meta">
-                                                        <span><i class="fa fa-user"></i> <a href="#">Admin</a></span>
-                                                        <span><i class="fa fa-comment"></i> <a href="#">15 Comments</a></span>
-                                                    </div>
-                                                </header>
-                                                <div class="entry-content">
-                                                    <p>Curabitur sagittis fermentum ante at imperdiet. Proin viverra arcu ac quam finibus, efficitur rutrum turpis auctor. Maecenas at mi vitae lacus tempus egestas nec eget eros. Nunc eget est tellus. Quisque quis mattis eros, sit amet facilisis felis. Aliquam molestie purus venenatis lorem laoreet venenatis.....</p>
-                                                </div>
-                                                <footer class="entry-footer">
-                                                    <a class="btn btn-default" href="blog-detail.html">Read More</a>
-                                                </footer>
-                                            </div>
-                                        </div>
-                                    </article>
-                                    <article>
-                                        <div class="grid-item blog-item">
-                                            <div class="post-thumbnail">
-                                                <div class="post-date-box">
-                                                    <div class="post-date">
-                                                        <a class="date" href="#.">07</a>
-                                                    </div>
-                                                    <div class="post-date-month">
-                                                        <a class="month" href="#.">Mar</a>
-                                                    </div>
-                                                </div>
-                                                <a href="blog-detail.html"><img alt="blog" src="images/blog/blog-06.jpg" /></a>
-                                                <div class="post-share">
-                                                    <a href="#."><i class="fa fa-comment"></i> 37</a>
-                                                    <a href="#."><i class="fa fa-thumbs-o-up"></i> 110</a>
-                                                    <a href="#."><i class="fa fa-eye"></i> 180</a>
-                                                    <a href="#."><i class="fa fa-share-alt"></i> Share</a>
-                                                </div>
-                                            </div>
-                                            <div class="post-detail">
-                                                <header class="entry-header">
-                                                    <div class="blog_meta_category">
-                                                        <span class="arrow-right"></span>
-                                                        <a href="#." rel="category tag">Design</a>, 
-                                                        <a href="#." rel="category tag">art</a>
-                                                    </div>
-                                                    <h3 class="entry-title"><a href="blog-detail.html">Here each week my friends</a></h3>
-                                                    <div class="entry-meta">
-                                                        <span><i class="fa fa-user"></i> <a href="#">Admin</a></span>
-                                                        <span><i class="fa fa-comment"></i> <a href="#">15 Comments</a></span>
-                                                    </div>
-                                                </header>
-                                                <div class="entry-content">
-                                                    <p>Curabitur sagittis fermentum ante at imperdiet. Proin viverra arcu ac quam finibus, efficitur rutrum turpis auctor. Maecenas at mi vitae lacus tempus egestas nec eget eros. Nunc eget est tellus. Quisque quis mattis eros, sit amet facilisis felis. Aliquam molestie purus venenatis lorem laoreet venenatis.....</p>
-                                                </div>
-                                                <footer class="entry-footer">
-                                                    <a class="btn btn-default" href="blog-detail.html">Read More</a>
-                                                </footer>
-                                            </div>
-                                        </div>
-                                    </article>
-                                    <article>
-                                        <div class="grid-item blog-item">
-                                            <div class="post-thumbnail">
-                                                <div class="post-date-box">
-                                                    <div class="post-date">
-                                                        <a class="date" href="#.">07</a>
-                                                    </div>
-                                                    <div class="post-date-month">
-                                                        <a class="month" href="#.">Mar</a>
-                                                    </div>
-                                                </div>
-                                                <a href="blog-detail.html"><img alt="blog" src="images/blog/blog-07.jpg" /></a>
-                                                <div class="post-share">
-                                                    <a href="#."><i class="fa fa-comment"></i> 37</a>
-                                                    <a href="#."><i class="fa fa-thumbs-o-up"></i> 110</a>
-                                                    <a href="#."><i class="fa fa-eye"></i> 180</a>
-                                                    <a href="#."><i class="fa fa-share-alt"></i> Share</a>
-                                                </div>
-                                            </div>
-                                            <div class="post-detail">
-                                                <header class="entry-header">
-                                                    <div class="blog_meta_category">
-                                                        <span class="arrow-right"></span>
-                                                        <a href="#." rel="category tag">Design</a>, 
-                                                        <a href="#." rel="category tag">art</a>
-                                                    </div>
-                                                    <h3 class="entry-title"><a href="blog-detail.html">Here each week my friends</a></h3>
-                                                    <div class="entry-meta">
-                                                        <span><i class="fa fa-user"></i> <a href="#">Admin</a></span>
-                                                        <span><i class="fa fa-comment"></i> <a href="#">15 Comments</a></span>
-                                                    </div>
-                                                </header>
-                                                <div class="entry-content">
-                                                    <p>Curabitur sagittis fermentum ante at imperdiet. Proin viverra arcu ac quam finibus, efficitur rutrum turpis auctor. Maecenas at mi vitae lacus tempus egestas nec eget eros. Nunc eget est tellus. Quisque quis mattis eros, sit amet facilisis felis. Aliquam molestie purus venenatis lorem laoreet venenatis.....</p>
-                                                </div>
-                                                <footer class="entry-footer">
-                                                    <a class="btn btn-default" href="blog-detail.html">Read More</a>
-                                                </footer>
-                                            </div>
-                                        </div>
-                                    </article>
-                                    <article>
-                                        <div class="grid-item blog-item">
-                                            <div class="post-thumbnail">
-                                                <div class="post-date-box">
-                                                    <div class="post-date">
-                                                        <a class="date" href="#.">07</a>
-                                                    </div>
-                                                    <div class="post-date-month">
-                                                        <a class="month" href="#.">Mar</a>
-                                                    </div>
-                                                </div>
-                                                <a href="blog-detail.html"><img alt="blog" src="images/blog/blog-08.jpg" /></a>
-                                                <div class="post-share">
-                                                    <a href="#."><i class="fa fa-comment"></i> 37</a>
-                                                    <a href="#."><i class="fa fa-thumbs-o-up"></i> 110</a>
-                                                    <a href="#."><i class="fa fa-eye"></i> 180</a>
-                                                    <a href="#."><i class="fa fa-share-alt"></i> Share</a>
-                                                </div>
-                                            </div>
-                                            <div class="post-detail">
-                                                <header class="entry-header">
-                                                    <div class="blog_meta_category">
-                                                        <span class="arrow-right"></span>
-                                                        <a href="#." rel="category tag">Design</a>, 
-                                                        <a href="#." rel="category tag">art</a>
-                                                    </div>
-                                                    <h3 class="entry-title"><a href="blog-detail.html">Here each week my friends</a></h3>
-                                                    <div class="entry-meta">
-                                                        <span><i class="fa fa-user"></i> <a href="#">Admin</a></span>
-                                                        <span><i class="fa fa-comment"></i> <a href="#">15 Comments</a></span>
-                                                    </div>
-                                                </header>
-                                                <div class="entry-content">
-                                                    <p>Curabitur sagittis fermentum ante at imperdiet. Proin viverra arcu ac quam finibus, efficitur rutrum turpis auctor. Maecenas at mi vitae lacus tempus egestas nec eget eros. Nunc eget est tellus. Quisque quis mattis eros, sit amet facilisis felis. Aliquam molestie purus venenatis lorem laoreet venenatis.....</p>
-                                                </div>
-                                                <footer class="entry-footer">
-                                                    <a class="btn btn-default" href="blog-detail.html">Read More</a>
-                                                </footer>
-                                            </div>
-                                        </div>
-                                    </article>
-                                    <article>
-                                        <div class="grid-item blog-item">
-                                            <div class="post-thumbnail">
-                                                <div class="post-date-box">
-                                                    <div class="post-date">
-                                                        <a class="date" href="#.">07</a>
-                                                    </div>
-                                                    <div class="post-date-month">
-                                                        <a class="month" href="#.">Mar</a>
-                                                    </div>
-                                                </div>
-                                                <a href="blog-detail.html"><img alt="blog" src="images/blog/blog-09.jpg" /></a>
-                                                <div class="post-share">
-                                                    <a href="#."><i class="fa fa-comment"></i> 37</a>
-                                                    <a href="#."><i class="fa fa-thumbs-o-up"></i> 110</a>
-                                                    <a href="#."><i class="fa fa-eye"></i> 180</a>
-                                                    <a href="#."><i class="fa fa-share-alt"></i> Share</a>
-                                                </div>
-                                            </div>
-                                            <div class="post-detail">
-                                                <header class="entry-header">
-                                                    <div class="blog_meta_category">
-                                                        <span class="arrow-right"></span>
-                                                        <a href="#." rel="category tag">Design</a>, 
-                                                        <a href="#." rel="category tag">art</a>
-                                                    </div>
-                                                    <h3 class="entry-title"><a href="blog-detail.html">Here each week my friends</a></h3>
-                                                    <div class="entry-meta">
-                                                        <span><i class="fa fa-user"></i> <a href="#">Admin</a></span>
-                                                        <span><i class="fa fa-comment"></i> <a href="#">15 Comments</a></span>
-                                                    </div>
-                                                </header>
-                                                <div class="entry-content">
-                                                    <p>Curabitur sagittis fermentum ante at imperdiet. Proin viverra arcu ac quam finibus, efficitur rutrum turpis auctor. Maecenas at mi vitae lacus tempus egestas nec eget eros. Nunc eget est tellus. Quisque quis mattis eros, sit amet facilisis felis. Aliquam molestie purus venenatis lorem laoreet venenatis.....</p>
-                                                </div>
-                                                <footer class="entry-footer">
-                                                    <a class="btn btn-default" href="blog-detail.html">Read More</a>
-                                                </footer>
-                                            </div>
-                                        </div>
-                                    </article>
+                       @endforeach
                                 </div>
                                 <a href="#" id="loadmore">Load More Posts</a>
                             </div>

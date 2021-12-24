@@ -28,7 +28,7 @@ class BlogFactory extends Factory
             'likes' => $this->faker->randomDigitNotNull,
             'views' => $this->faker->randomDigitNotNull,
             'comments' => $this->faker->randomDigitNotNull ,
-
+'author' => 'Admin'
 
 
         ];

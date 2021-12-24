@@ -21,6 +21,7 @@ class CreateBlogTable extends Migration
             $table->integer('likes')->default(0)	;
             $table->integer('views')->default(0);
             $table->string('content');
+            $table->string('author');
 
             $table->string('comments');
 
